@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  // The vendored canvas engine ships TypeScript source.
+  transpilePackages: ["ascii-sharks"],
   experimental: {
     agentFeedback: true,
   },
